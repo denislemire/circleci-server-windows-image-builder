@@ -555,8 +555,16 @@ jobs:
           path: /tmp/artifacts
 
 workflows:
-  build_aws_2019:
+  build_aws_2022:
     jobs:
-      - windows_visualstudio_aws_2019:
-          context: circleci-server-image-builder
+      # Uncomment this if you want to run renovate. This will update the ansible packages versions
+      # - renovate-config-validator
+      - build_image_ansible:
           filters: *filters
+          name: windows_2022_visualstudio_aws
+          path: "windows2022/visual-studio-2022"
+          build_if_changed: "windows2022"
+          source_dirs: "windows2022"
+          packer_provider: "amazon-ebs"
+          branch: test/install-vs-asadmin
+          context: circleci-server-image-builder
