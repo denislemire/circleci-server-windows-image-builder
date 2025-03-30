@@ -24,6 +24,7 @@ builders:
     secret_key: ""
     subnet_id: "subnet-0d6db251d6938674a"
     vpc_id: "vpc-04a016287b55aaba9"
+    winrm_timeout: "30m"
 
     region: '{{ user "ami_region" }}'
     source_ami_filter:
