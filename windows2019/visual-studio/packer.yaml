@@ -4,6 +4,8 @@ variables:
   account_file: ""
 
   subnet_id: "subnet-03d5181fc34049af2"
+  vpc_id: "vpc-04cd711025374b879"
+
 
   # metadata for tagging
   circle_build_url: '{{ env "CIRCLE_BUILD_URL"}}'
