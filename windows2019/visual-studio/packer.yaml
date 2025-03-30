@@ -3,8 +3,8 @@ variables:
   project_id: notnoopci-prototype
   account_file: ""
 
-  subnet_id: "subnet-03d5181fc34049af2"
-  vpc_id: "vpc-04cd711025374b879"
+  subnet_id: "subnet-0d6db251d6938674a"
+  vpc_id: "vpc-04a016287b55aaba9"
 
 
   # metadata for tagging
