@@ -3,10 +3,6 @@ variables:
   project_id: notnoopci-prototype
   account_file: ""
 
-  subnet_id: "subnet-0d6db251d6938674a"
-  vpc_id: "vpc-04a016287b55aaba9"
-
-
   # metadata for tagging
   circle_build_url: '{{ env "CIRCLE_BUILD_URL"}}'
   circle_job_name: '{{ env "CIRCLE_JOB" }}'
@@ -26,6 +22,9 @@ builders:
   - type: amazon-ebs
     access_key: ""
     secret_key: ""
+    subnet_id: "subnet-0d6db251d6938674a"
+    vpc_id: "vpc-04a016287b55aaba9"
+
     region: '{{ user "ami_region" }}'
     source_ami_filter:
       filters:
