@@ -3,6 +3,8 @@ variables:
   project_id: notnoopci-prototype
   account_file: ""
 
+  subnet_id: "subnet-03d5181fc34049af2"
+
   # metadata for tagging
   circle_build_url: '{{ env "CIRCLE_BUILD_URL"}}'
   circle_job_name: '{{ env "CIRCLE_JOB" }}'
